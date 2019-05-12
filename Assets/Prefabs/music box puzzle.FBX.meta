@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: c3ba81748d3553c419109fd3b08e9e9b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 2nd Gear
+    100002: Box001
+    100004: Comb
+    100006: Comb Plate Left Screw
+    100008: Comb Plate Right Screw
+    100010: Comb001
+    100012: Comb002
+    100014: Comb003
+    100016: Comb004
+    100018: Comb005
+    100020: Comb006
+    100022: Comb007
+    100024: Comb008
+    100026: Comb009
+    100028: Comb010
+    100030: Comb011
+    100032: Comb012
+    100034: Comb013
+    100036: Comb014
+    100038: Comb015
+    100040: Comb016
+    100042: Drum
+    100044: Drum Holder
+    100046: Frame
+    100048: //RootNode
+    100050: NGon002
+    100052: NGon006
+    100054: NGon007
+    100056: NGon008
+    100058: Plane001
+    100060: Screw Plate
+    100062: Spring Housing
+    100064: Teeth
+    100066: Winding Shaft
+    400000: 2nd Gear
+    400002: Box001
+    400004: Comb
+    400006: Comb Plate Left Screw
+    400008: Comb Plate Right Screw
+    400010: Comb001
+    400012: Comb002
+    400014: Comb003
+    400016: Comb004
+    400018: Comb005
+    400020: Comb006
+    400022: Comb007
+    400024: Comb008
+    400026: Comb009
+    400028: Comb010
+    400030: Comb011
+    400032: Comb012
+    400034: Comb013
+    400036: Comb014
+    400038: Comb015
+    400040: Comb016
+    400042: Drum
+    400044: Drum Holder
+    400046: Frame
+    400048: //RootNode
+    400050: NGon002
+    400052: NGon006
+    400054: NGon007
+    400056: NGon008
+    400058: Plane001
+    400060: Screw Plate
+    400062: Spring Housing
+    400064: Teeth
+    400066: Winding Shaft
+    2100000: No Name
+    2300000: 2nd Gear
+    2300002: Box001
+    2300004: Comb
+    2300006: Comb Plate Left Screw
+    2300008: Comb Plate Right Screw
+    2300010: Comb001
+    2300012: Comb002
+    2300014: Comb003
+    2300016: Comb004
+    2300018: Comb005
+    2300020: Comb006
+    2300022: Comb007
+    2300024: Comb008
+    2300026: Comb009
+    2300028: Comb010
+    2300030: Comb011
+    2300032: Comb012
+    2300034: Comb013
+    2300036: Comb014
+    2300038: Comb015
+    2300040: Comb016
+    2300042: Drum
+    2300044: Drum Holder
+    2300046: Frame
+    2300048: NGon002
+    2300050: NGon006
+    2300052: NGon007
+    2300054: NGon008
+    2300056: Plane001
+    2300058: Screw Plate
+    2300060: Spring Housing
+    2300062: Teeth
+    2300064: Winding Shaft
+    3300000: 2nd Gear
+    3300002: Box001
+    3300004: Comb
+    3300006: Comb Plate Left Screw
+    3300008: Comb Plate Right Screw
+    3300010: Comb001
+    3300012: Comb002
+    3300014: Comb003
+    3300016: Comb004
+    3300018: Comb005
+    3300020: Comb006
+    3300022: Comb007
+    3300024: Comb008
+    3300026: Comb009
+    3300028: Comb010
+    3300030: Comb011
+    3300032: Comb012
+    3300034: Comb013
+    3300036: Comb014
+    3300038: Comb015
+    3300040: Comb016
+    3300042: Drum
+    3300044: Drum Holder
+    3300046: Frame
+    3300048: NGon002
+    3300050: NGon006
+    3300052: NGon007
+    3300054: NGon008
+    3300056: Plane001
+    3300058: Screw Plate
+    3300060: Spring Housing
+    3300062: Teeth
+    3300064: Winding Shaft
+    4300000: Frame
+    4300002: Drum
+    4300004: Comb
+    4300006: Spring Housing
+    4300008: Winding Shaft
+    4300010: 2nd Gear
+    4300012: Drum Holder
+    4300014: Comb001
+    4300016: Comb002
+    4300018: Comb003
+    4300020: Comb004
+    4300022: Comb005
+    4300024: Comb006
+    4300026: Comb007
+    4300028: Comb008
+    4300030: Comb009
+    4300032: Comb010
+    4300034: Comb011
+    4300036: Comb012
+    4300038: Comb013
+    4300040: Comb014
+    4300042: Comb015
+    4300044: Comb016
+    4300046: Screw Plate
+    4300048: Comb Plate Right Screw
+    4300050: Box001
+    4300052: Plane001
+    4300054: NGon002
+    4300056: Comb Plate Left Screw
+    4300058: NGon006
+    4300060: NGon007
+    4300062: NGon008
+    4300064: Teeth
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

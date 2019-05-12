@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 91ccaa7295b8b2b43a9beebb2e1ebdb0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Backhair
+    100002: Body
+    100004: Cornea
+    100006: Dress
+    100008: Eyeballs
+    100010: Fronthair
+    100012: //RootNode
+    100014: Left_Bow
+    100016: Right_Bow
+    100018: Shoes
+    100020: Socks
+    100022: Tophair
+    100024: Twintails
+    400000: Backhair
+    400002: Body
+    400004: Cornea
+    400006: Dress
+    400008: Eyeballs
+    400010: Fronthair
+    400012: //RootNode
+    400014: Left_Bow
+    400016: Right_Bow
+    400018: Shoes
+    400020: Socks
+    400022: Tophair
+    400024: Twintails
+    2100000: EyeM__EyeI
+    2100002: Material__42
+    2100004: ShoeM__blonde_png_004
+    2100006: ShoeM
+    2100008: Material__43
+    2100010: Material__40
+    2100012: FaceM__FaceI
+    2100014: BodyM__BodyI
+    2100016: Material__41
+    2100018: Material__44
+    2300000: Backhair
+    2300002: Body
+    2300004: Cornea
+    2300006: Dress
+    2300008: Eyeballs
+    2300010: Fronthair
+    2300012: Left_Bow
+    2300014: Right_Bow
+    2300016: Shoes
+    2300018: Socks
+    2300020: Tophair
+    2300022: Twintails
+    3300000: Backhair
+    3300002: Body
+    3300004: Cornea
+    3300006: Dress
+    3300008: Eyeballs
+    3300010: Fronthair
+    3300012: Left_Bow
+    3300014: Right_Bow
+    3300016: Shoes
+    3300018: Socks
+    3300020: Tophair
+    3300022: Twintails
+    4300000: Cornea
+    4300002: Tophair
+    4300004: Backhair
+    4300006: Twintails
+    4300008: Fronthair
+    4300010: Shoes
+    4300012: Socks
+    4300014: Eyeballs
+    4300016: Body
+    4300018: Dress
+    4300020: Left_Bow
+    4300022: Right_Bow
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

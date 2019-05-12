@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a82ab3d96ca6c5b4db4239c0ad186151
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - waypoint: {instanceID: 0}
+  - death: {instanceID: 0}
+  - audiosource: {instanceID: 0}
+  - Running: {instanceID: 0}
+  - audiosource2: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
