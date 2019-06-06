@@ -12,6 +12,7 @@ TagManager:
   - musicbox
   - box
   - puzzle
+  - Do
   layers:
   - Default
   - TransparentFX

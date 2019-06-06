@@ -111,18 +111,28 @@ public class CharacterMovement : MonoBehaviour
     {
         //Start new state using priority system
 
-        //Attack
+        //isAttacking
 
-        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0")
+        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
         {
             StartAttack();
             AttackSound(); //??????????????????????????????????
         }
-        else if (Input.GetButtonDown("Fire1"))
+        //else if (Input.GetButtonDown("Fire1"))
+        //{
+        //    ComboAttack();
+        //    AttackSound(); //??????????????????????????????????
+        //}
+
+        //isAttacking 0
+        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
         {
-            ComboAttack();
+            StartAttack();
             AttackSound(); //??????????????????????????????????
         }
+        //isAttacking 1
+
+
 
         //Walk
 
@@ -138,23 +148,42 @@ public class CharacterMovement : MonoBehaviour
                 StartDodge();
             }
 
-            if (Input.GetButtonDown("Fire1") && currentState != "isAttacking")
+            if (Input.GetButtonDown("Jump") && Input.GetButtonDown("Left") && currentState != "isGettingHit" && currentState != "Dodge")
+            {
+                StartDodgeLeft();
+            }
+            if (Input.GetButtonDown("Jump") && Input.GetButtonDown("Right") && currentState != "isGettingHit" && currentState != "Dodge")
+            {
+                StartDodgeRight();
+            }
+
+            if (Input.GetButtonDown("Fire1") && currentState != "isGettingHit" && currentState != "isAttacking 0" && currentState != "isAttacking 1" )
             {
                 StartAttack();
+            }
+
+            if (Input.GetButtonDown("Fire2")  && currentState != "isGettingHit" && currentState != "isAttacking 1")
+            {
+                StartAttack1();
+            }
+
+            if (Input.GetButtonDown("Fire3")  && currentState != "isGettingHit" && currentState != "isAttacking 0")
+            {
+                StartAttack0();
             }
         }
 
         ////Dodge Right
-        //if (Input.GetAxis("Horizontal") > 0 && Input.GetButtonDown("Jump") && currentState != "isGettingHit")
+        //if (Input.GetAxis("Horizontal") > 0 && Input.GetButton("Jump") && currentState != "isGettingHit")
         //{
-        //    DodgeRight();
+        //    StartDodgeRight();
         //    print("dodged right");
         //}
 
         ////Dodge Left
-        //if (Input.GetAxis("Horizontal") < 0 && Input.GetButtonDown("Jump") && currentState != "isGettingHit")
+        //if (Input.GetAxis("Horizontal") < 0 && Input.GetButton("Jump") && currentState != "isGettingHit")
         //{
-        //    DodgeLeft();
+        //    StartDodgeLeft();
         //    print("dodged right");
         //}
 
@@ -218,6 +247,8 @@ public class CharacterMovement : MonoBehaviour
         StopAttack();
         StopGettingHit();
         StopDodge();
+        StopDodgeLeft();
+        StopDodgeRight();
         StopDeath();
         myAnimator.SetBool("ComboAttack", false);
     }
@@ -284,6 +315,55 @@ public class CharacterMovement : MonoBehaviour
         myAnimator.SetBool("Dodge", false);
     }
 
+    //Dodge Right
+    void StartDodgeRight()
+    {
+        currentState = "DodgeRight";
+        myAnimatorNormalizedTime = 0f;
+        myAnimator.SetBool("DodgeRight", true);
+    }
+    void DodgeRight()
+    {
+        myAnimator.SetFloat("walkInputPosY", verticalInput);
+        myAnimator.SetFloat("walkInputPosX", horizontalInput);
+
+        if (myAnimatorNormalizedTime >= 2)
+        {
+            StopDodgeRight();
+        }
+    }
+    void StopDodgeRight()
+    {
+        currentState = "none";
+        myAnimator.SetFloat("walkInputPosY", 0);
+        myAnimator.SetFloat("walkInputPosX", 0);
+        myAnimator.SetBool("DodgeRight", false);
+    }
+    //Dodge Left
+    void StartDodgeLeft()
+    {
+        currentState = "DodgeLeft";
+        myAnimatorNormalizedTime = 0f;
+        myAnimator.SetBool("DodgeLeft", true);
+    }
+    void DodgeLeft()
+    {
+        myAnimator.SetFloat("walkInputPosY", verticalInput);
+        myAnimator.SetFloat("walkInputPosX", horizontalInput);
+
+        if (myAnimatorNormalizedTime >= 2)
+        {
+            StopDodgeLeft();
+        }
+    }
+    void StopDodgeLeft()
+    {
+        currentState = "none";
+        myAnimator.SetFloat("walkInputPosY", 0);
+        myAnimator.SetFloat("walkInputPosX", 0);
+        myAnimator.SetBool("DodgeLeft", false);
+    }
+
     //RUNNING
 
     void StartRun()
@@ -291,7 +371,7 @@ public class CharacterMovement : MonoBehaviour
         ResetStates();
         currentState = "Running";
         myAnimator.SetBool("Running", true);
-        //myAnimator.SetFloat("Speed", 5.1f);
+        myAnimator.SetFloat("Speed", 5f);
     }
 
     void Run()
@@ -357,6 +437,56 @@ public class CharacterMovement : MonoBehaviour
         //myWeapon.SendMessage("DeactivateWeaponCollider");
     }
 
+    //ATTACKING 1
+    void StartAttack1()
+    {
+        EnableWeapon();
+        ResetStates();
+        myAnimatorNormalizedTime = 0;
+        myAnimator.SetBool("isAttacking 1", true);
+        currentState = "isAttacking 1";
+    }
+
+    void Attacking1()
+    {
+        if (myAnimatorNormalizedTime >= 1f)
+        {
+            StopAttack1();
+        }
+    }
+
+    void StopAttack1()
+    {
+        myAnimator.SetBool("isAttacking 1", false);
+        currentState = "none";
+        //myWeapon.SendMessage("DeactivateWeaponCollider");
+    }
+
+    //ATTACKING 0
+    void StartAttack0()
+    {
+        EnableWeapon();
+        ResetStates();
+        myAnimatorNormalizedTime = 0;
+        myAnimator.SetBool("isAttacking 0", true);
+        currentState = "isAttacking 0";
+    }
+
+    void Attacking0()
+    {
+        if (myAnimatorNormalizedTime >= 1f)
+        {
+            StopAttack0();
+        }
+    }
+
+    void StopAttack0()
+    {
+        myAnimator.SetBool("isAttacking 0", false);
+        currentState = "none";
+        //myWeapon.SendMessage("DeactivateWeaponCollider");
+    }
+
     //GETTING HIT
     public void StartGetHit()
     {
@@ -401,10 +531,10 @@ public class CharacterMovement : MonoBehaviour
 
     private void ComboAttack()
     {
-        //myAnimator.SetFloat("RandAttack", Random.value);
-        //myAnimator.SetTrigger("ComboAttack");
+        myAnimator.SetFloat("RandAttack", Random.value);
+        myAnimator.SetTrigger("ComboAttack");
         myAnimator.SetBool("ComboAttack", true);
-        //attackMovement.AttackForward();
+        attackMovement.AttackForward();
 
         //audio for combo attack
     }

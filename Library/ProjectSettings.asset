@@ -242,7 +242,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
+  AndroidKeystoreName: '{inproject}: '
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
@@ -572,7 +572,7 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
     Build: 0
-    Collab: 1
+    Collab: 0
     ErrorHub: 0
     Hub: 0
     UNet: 1
@@ -595,9 +595,9 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 2
-  cloudProjectId: dbf038ed-851e-452c-86d1-b40d2933d8fb
+  cloudProjectId: 67d4eb46-d07f-4031-ace0-b4cd1288d42f
   framebufferDepthMemorylessMode: 0
-  projectName: Action Adventure Prototype
+  projectName: Action Adventure Prototype (1)
   organizationId: dawsonactionadventure
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
