@@ -13,14 +13,14 @@ GameObject:
   - component: {fileID: 3598852586938900951}
   - component: {fileID: 5878962428567144660}
   - component: {fileID: 9105128950840565519}
-  - component: {fileID: 5739433703614462915}
+  - component: {fileID: 5808096836392143716}
   - component: {fileID: 5401649426270318526}
   - component: {fileID: 5607284163355688806}
   - component: {fileID: 1831006555750622030}
   - component: {fileID: 1180165693}
   - component: {fileID: 1180165684}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: PlayerForMainLevelCopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   damping: 2
   distance: 15
   targetList: []
---- !u!114 &5739433703614462915
+--- !u!114 &5808096836392143716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,17 +214,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180165683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478d292fb101f38428be2736713defab, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cf843959a0f03140ba84e8cdb3b636d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 5
   move: 0
-  dashTime: 0.3
-  attack1: {fileID: 8300000, guid: dcf93570bbc14444a8670c4c7c83ef85, type: 3}
-  attack2: {fileID: 8300000, guid: 222192cb17afe3749a928eb44154d888, type: 3}
-  audiosource1: {fileID: 5878962428567144660}
-  audiosource2: {fileID: 5878962428567144660}
-  myWeapon: {fileID: 8807883958991314875}
+  dashTime: 0.5
+  attack1: {fileID: 0}
+  attack2: {fileID: 0}
+  audiosource1: {fileID: 0}
+  audiosource2: {fileID: 0}
+  myWeapon: {fileID: 0}
 --- !u!114 &5401649426270318526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +250,8 @@ MonoBehaviour:
   audiosource4: {fileID: 5878962428567144660}
   winSound: {fileID: 8300000, guid: c41c5f98b627c0948b54a94ff2754d8d, type: 3}
   audiosource5: {fileID: 5878962428567144660}
+  door_1: {fileID: 0}
+  myAnimator: {fileID: 0}
 --- !u!114 &5607284163355688806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +309,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicboxUI: {fileID: 0}
+  goMain: {fileID: 0}
+  success: {fileID: 0}
+  audiosource: {fileID: 0}
 --- !u!1 &106215409573423302
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +678,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1099,6 +1105,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1336,6 +1343,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1512,6 +1520,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1590,9 +1599,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1845,6 +1855,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1996,6 +2007,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2170,6 +2182,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2675,6 +2688,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2769,6 +2783,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3204,6 +3219,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3285,6 +3301,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3472,6 +3489,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3525,6 +3543,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05fff31d979fb44db7962689a719082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Do: {fileID: 0}
+  Ra: {fileID: 0}
+  Mi: {fileID: 0}
+  Fa: {fileID: 0}
+  So: {fileID: 0}
+  La: {fileID: 0}
+  Ti: {fileID: 0}
+  Do2: {fileID: 0}
+  Do1: {fileID: 0}
+  Ra1: {fileID: 0}
+  Mi1: {fileID: 0}
+  Fa1: {fileID: 0}
+  So1: {fileID: 0}
+  La1: {fileID: 0}
+  Ti1: {fileID: 0}
+  DoTwo: {fileID: 0}
 --- !u!1 &8809347518878032014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,6 +3678,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

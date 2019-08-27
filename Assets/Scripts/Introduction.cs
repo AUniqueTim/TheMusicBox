@@ -52,7 +52,7 @@ public class Introduction : MonoBehaviour
         InventoryUI.SetActive(false);
         HealthUI.SetActive(false);
 
-        move.enabled = false;
+        move.enabled = true;
         player.SetActive(false);
 
     }
