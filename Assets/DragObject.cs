@@ -5,8 +5,6 @@ using UnityEngine;
 public class DragObject : MonoBehaviour
 {
     private Vector3 mOffset;
-
-
     private float mZCoord;
 
 
