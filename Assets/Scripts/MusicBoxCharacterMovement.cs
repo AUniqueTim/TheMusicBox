@@ -102,9 +102,18 @@ public class MusicBoxCharacterMovement : MonoBehaviour
             {
                 dashF = dashTime;
             }
+            speed = 5f;
+        }
+        else if (Input.GetButtonDown("Jump"))
+        {
+            if (dashF < -(dashTime * 2))
+            {
+                dashF = dashTime;
+            }
+            speed = 3f;
         }
 
-        RunStates();
+            RunStates();
     }
 
     void RunStates()
@@ -113,7 +122,7 @@ public class MusicBoxCharacterMovement : MonoBehaviour
 
         //isAttacking
 
-        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
+        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking")
         {
             StartAttack();
             AttackSound(); //??????????????????????????????????
@@ -125,15 +134,15 @@ public class MusicBoxCharacterMovement : MonoBehaviour
         //}
 
         //isAttacking 0
-        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
+        if (Input.GetButtonDown("Fire1") && currentState == "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
         {
-            StartAttack();
+            StartAttack1();
             AttackSound(); //??????????????????????????????????
         }
         //isAttacking 1
-        if (Input.GetButtonDown("Fire1") && currentState != "isAttacking" && currentState != "isAttacking 0" && currentState != "isAttacking1")
+        if (Input.GetButtonDown("Fire1") && currentState == "isAttacking" && currentState == "isAttacking 0" && currentState != "isAttacking1")
         {
-            StartAttack();
+            StartAttack0();
             AttackSound(); //??????????????????????????????????
         }
 
@@ -195,7 +204,7 @@ public class MusicBoxCharacterMovement : MonoBehaviour
 
         if (Input.GetAxis("Vertical") > 0 && Input.GetButtonDown("Jump") && currentState != "Running" && currentState != "isGettingHit") //&& myAnimator.GetFloat("Speed") > 5f))
         {
-            Run();
+            StartRun();
             //RUNNING SOUND!
         }
 
@@ -210,7 +219,7 @@ public class MusicBoxCharacterMovement : MonoBehaviour
         //Death
 
         //Start overlapping states
-        /*StartTurn();
+        StartTurn();
         {
             isTurning = true;
         }
@@ -227,7 +236,7 @@ public class MusicBoxCharacterMovement : MonoBehaviour
         }
         //Turn
         if (mouseXInput != 0)
-        { StartTurn(); }*/
+        { StartTurn(); }
 
         //Run ongoing states
         if (currentState == "isGettingHit") GetHit();
